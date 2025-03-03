@@ -1,0 +1,23 @@
+<!-- Showing President name-->
+<ul>
+    <li *ngFor="let president of presidents">{{president}}</li>
+</ul>
+<ol>
+    @for(president of presidents; track president){
+        <li>{{president}}</li>
+    }
+</ol>
+<!-- PART 2-->
+<!-- Showing President name AND TERM-->
+<hr>
+<ul>
+    <li *ngFor="let pres of presidents2">{{pres.name}},{{pres.term}}</li>
+</ul>
+
+<ol>
+    @for(pres of presidents2; track pres){
+        <li>{{pres.name}},{{pres.term}}</li>
+    }
+        
+
+</ol>
